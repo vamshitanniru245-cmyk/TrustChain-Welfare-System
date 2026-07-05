@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+
+training_results.csv
+
+.vscode/
+.idea/
+
+venv/
+.env
+
+.DS_Store
+Thumbs.db

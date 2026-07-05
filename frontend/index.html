@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>TrustChain Welfare System</title>
+
+```
+<style>
+    body {
+        font-family: Arial;
+        background: linear-gradient(to right, #1e3c72, #2a5298);
+        color: white;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .card {
+        background: white;
+        color: black;
+        padding: 30px;
+        width: 350px;
+        margin: auto;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    select, button {
+        width: 90%;
+        padding: 12px;
+        margin-top: 12px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        background: #1e3c72;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #16325c;
+    }
+
+    .divider {
+        margin: 20px 0;
+        font-weight: bold;
+        color: gray;
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<h1>TrustChain Welfare System</h1>
+
+<div class="card">
+
+```
+<h2>Apply for Scheme</h2>
+
+<select id="scheme">
+    <option value="">-- Select Scheme --</option>
+    <option value="scholarship">Scholarship</option>
+    <option value="pension">Pension</option>
+    <option value="subsidy">Subsidy</option>
+</select>
+
+<button onclick="goApply()">Proceed</button>
+
+<div class="divider">OR</div>
+
+<h2>Track Application</h2>
+
+<button onclick="goTrack()">Check Status</button>
+```
+
+</div>
+
+<script>
+function goApply() {
+    const scheme = document.getElementById("scheme").value;
+
+    if (!scheme) {
+        alert("Please select a scheme");
+        return;
+    }
+
+    window.location.href = "apply.html?scheme=" + scheme;
+}
+
+function goTrack() {
+    window.location.href = "track.html";
+}
+</script>
+
+</body>
+</html>

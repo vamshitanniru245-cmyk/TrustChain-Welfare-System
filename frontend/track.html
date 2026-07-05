@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Track Application - TrustChain</title>
+
+```
+<style>
+    body {
+        font-family: Arial;
+        background: linear-gradient(to right, #1e3c72, #2a5298);
+        color: white;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .card {
+        background: white;
+        color: black;
+        padding: 25px;
+        width: 380px;
+        margin: auto;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    input, button {
+        width: 90%;
+        padding: 12px;
+        margin-top: 10px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        background: #1e3c72;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #16325c;
+    }
+
+    .result {
+        margin-top: 15px;
+        padding: 12px;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
+    .success {
+        background: #e6f9ed;
+        color: #1a7f37;
+    }
+
+    .error {
+        background: #fdecea;
+        color: #b42318;
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<h1>Track Your Application</h1>
+
+<div class="card">
+    <input type="text" id="hash" placeholder="Enter Transaction Hash">
+
+```
+<button onclick="track()">Check Status</button>
+
+<div id="result"></div>
+```
+
+</div>
+
+<script>
+function track() {
+    const hash = document.getElementById("hash").value.trim();
+    const resultDiv = document.getElementById("result");
+
+    if (!hash) {
+        resultDiv.className = "result error";
+        resultDiv.innerText = "Please enter a transaction hash";
+        return;
+    }
+
+    fetch("http://127.0.0.1:5000/track", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({ tx_hash: hash })
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.result) {
+            resultDiv.className = "result error";
+            resultDiv.innerText = data.result;
+            return;
+        }
+
+        resultDiv.className = "result success";
+        resultDiv.innerHTML =
+            "<b>Status:</b> " + data.status +
+            "<br><b>Scheme:</b> " + data.scheme +
+            "<br><b>Amount:</b> ₹" + data.amount +
+            "<br><b>Time:</b> " + data.time;
+    })
+    .catch(() => {
+        resultDiv.className = "result error";
+        resultDiv.innerText = "Error connecting to server";
+    });
+}
+</script>
+
+</body>
+</html>
