@@ -296,7 +296,7 @@ Our goal was not to build the final product, but to present an innovative idea t
 # 👨‍💻 Team Members
 
 - **Vamshi Tanniru**
-- **Your Teammate's Name**
+- **Rahul Chinna**
 
 ---
 
