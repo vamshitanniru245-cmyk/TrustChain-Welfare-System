@@ -1,10 +1,10 @@
-# 🚀 TrustChain - Transparent Welfare Distribution System
+#  TrustChain - Transparent Welfare Distribution System
 
 > **An AI-powered welfare distribution system that combines Machine Learning and Blockchain to make government welfare distribution more secure, transparent, and fraud-resistant.**
 
 ---
 
-# 📖 Project Overview
+#  Project Overview
 
 Government welfare schemes such as scholarships, pensions, and subsidies are designed to support eligible citizens. However, traditional welfare distribution systems often face challenges related to fraud, transparency, and manual verification.
 
@@ -28,23 +28,23 @@ Because of these challenges, welfare benefits may not always reach the genuine b
 
 ---
 
-# 💡 Our Solution
+#  Our Solution
 
 **TrustChain** addresses these problems by integrating modern technologies into a single platform.
 
 The system combines:
 
-- 🤖 **Machine Learning** for fraud detection
-- ⛓️ **Blockchain** for secure and transparent transaction storage
-- 🗄️ **MySQL** for beneficiary and scheme management
-- 🌐 **Flask** backend with a responsive web interface
-- 📋 **Rule-based eligibility verification** for welfare schemes
+-  **Machine Learning** for fraud detection
+-  **Blockchain** for secure and transparent transaction storage
+-  **MySQL** for beneficiary and scheme management
+-  **Flask** backend with a responsive web interface
+-  **Rule-based eligibility verification** for welfare schemes
 
 The system verifies beneficiaries using Aadhaar, checks eligibility according to government scheme rules, detects suspicious claim patterns using AI, stores approved transactions on Blockchain, and allows beneficiaries to track their applications using a unique Transaction Hash.
 
 ---
 
-# ✨ Features
+#  Features
 
 - ✅ Aadhaar-based Beneficiary Verification
 - ✅ Multiple Government Welfare Schemes
@@ -58,7 +58,7 @@ The system verifies beneficiaries using Aadhaar, checks eligibility according to
 
 ---
 
-# 🎯 Objectives
+#  Objectives
 
 - Ensure welfare benefits reach genuine beneficiaries.
 - Reduce fraudulent and duplicate claims.
@@ -67,15 +67,8 @@ The system verifies beneficiaries using Aadhaar, checks eligibility according to
 - Detect suspicious beneficiary behavior using Machine Learning.
 - Provide a simple way for beneficiaries to track their applications.
 
----
 
-# 🏗️ System Architecture
-
-![System Architecture](screenshots/system_architecture.png)
-
----
-
-# 🔄 Project Workflow
+#  Project Workflow
 
 1. User opens the TrustChain portal.
 2. User selects a welfare scheme.
@@ -91,7 +84,7 @@ The system verifies beneficiaries using Aadhaar, checks eligibility according to
 
 ---
 
-# 🤖 Machine Learning
+#  Machine Learning
 
 ### Algorithm Used
 
@@ -110,7 +103,7 @@ Instead of requiring predefined fraud examples, the model learns normal benefici
 
 ---
 
-# ⛓️ Blockchain Integration
+#  Blockchain Integration
 
 ### Blockchain Platform
 
@@ -127,7 +120,7 @@ Every approved transaction generates a unique **Transaction Hash**, which is sto
 
 ---
 
-# 🗄️ Database
+#  Database
 
 The project uses **MySQL** to manage:
 
@@ -137,7 +130,7 @@ The project uses **MySQL** to manage:
 
 ---
 
-# 💻 Technologies Used
+#  Technologies Used
 
 | Technology | Purpose |
 |------------|---------|
@@ -154,45 +147,45 @@ The project uses **MySQL** to manage:
 
 ---
 
-# 📸 Screenshots
+#  Screenshots
 
-## 🏠 Home Page
+##  Home Page
 
-![Home](screenshots/home_page.png)
-
----
-
-## 📝 Apply for Scheme
-
-![Apply](screenshots/apply_page.png)
+![Home](screenshots/Home_page.png)
 
 ---
 
-## ✅ Approval Result
+##  Apply for Scheme
 
-![Approval](screenshots/approval_result.png)
-
----
-
-## 🚨 Fraud Detection
-
-![Fraud](screenshots/fraud_detection.png)
+![Apply](screenshots/Apply_page.png)
 
 ---
 
-## 🔍 Track Application
+##  Approval Result
 
-![Tracking](screenshots/tracking_page.png)
-
----
-
-## ⛓️ Blockchain Transaction
-
-![Ganache](screenshots/ganache_transaction.png)
+![Approval](screenshots/Approval.png)
 
 ---
 
-# 📂 Project Structure
+##  Fraud Detection
+
+![Fraud](screenshots/Fraud_detection.png)
+
+---
+
+##  Track Application
+
+![Tracking](screenshots/Tracking.png)
+
+---
+
+##  Blockchain Transaction
+
+![Ganache](screenshots/Ganache_transaction.png)
+
+---
+
+#  Project Structure
 
 ```
 TrustChain/
@@ -221,7 +214,7 @@ TrustChain/
 
 ---
 
-# ⚙️ Installation
+#  Installation
 
 ## Clone the Repository
 
@@ -264,7 +257,7 @@ or use **VS Code Live Server**.
 
 ---
 
-# 🚀 Future Scope
+#  Future Scope
 
 This project is a prototype developed to demonstrate how Machine Learning and Blockchain can improve welfare distribution. In the future, TrustChain can be enhanced with:
 
@@ -281,7 +274,7 @@ This project is a prototype developed to demonstrate how Machine Learning and Bl
 
 ---
 
-# 🌟 Our Vision
+#  Our Vision
 
 TrustChain is more than just a college project—it is **our idea to bring a positive change in the way government welfare benefits are distributed**.
 
@@ -293,20 +286,20 @@ Our goal was not to build the final product, but to present an innovative idea t
 
 ---
 
-# 👨‍💻 Team Members
+#  Team Members
 
 - **Vamshi Tanniru**
 - **Rahul Chinna**
 
 ---
 
-# 📄 License
+#  License
 
 This project is developed for **academic and educational purposes only**.
 
 ---
 
-## ⭐ Support
+##  Support
 
 If you found this project interesting, please consider giving this repository a **⭐ Star**.
 
